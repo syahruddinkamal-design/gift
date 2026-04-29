@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff0f3; /* Warna pink sangat muda */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+.card {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(255, 182, 193, 0.4);
+    transition: transform 0.3s ease;
+}
+
+.ucapan {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    color: #d63384;
+    margin-bottom: 20px;
+}
+
+.pesan {
+    color: #666;
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+.tombol {
+    text-decoration: none;
+    background-color: #ff85a1;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.tombol:hover {
+    background-color: #ff4d7d;
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(255, 77, 125, 0.3);
+}
