@@ -54,3 +54,59 @@ body {
     transform: scale(1.05);
     box-shadow: 0 5px 15px rgba(255, 77, 125, 0.3);
 }
+/* Styling Kolom Wish */
+.wish-container {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: left; /* Biar tulisan label ada di kiri */
+}
+
+.wish-container label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #444;
+}
+
+#wish {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ffcad4;
+    border-radius: 12px;
+    font-family: 'Quicksand', sans-serif;
+    outline: none;
+    transition: 0.3s;
+    box-sizing: border-box; /* Penting: supaya kotak nggak melebar keluar card */
+    background-color: #fffafb;
+}
+
+#wish:focus {
+    border-color: #f7a1b0;
+    box-shadow: 0 0 8px rgba(247, 161, 176, 0.3);
+}
+
+.tombol-kirim {
+    width: 100%;
+    margin-top: 15px;
+    background-color: #f7a1b0;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 25px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.tombol-kirim:hover {
+    background-color: #e58e9d;
+    transform: translateY(-2px); /* Efek melayang dikit saat kursor nempel */
+}
+
+/* Hilangkan garis pemisah kalau dirasa terlalu ramai */
+hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 20px 0;
+}
