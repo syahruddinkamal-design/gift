@@ -308,5 +308,23 @@
     </div>
     
     <script src="main.js"></script>
+    <audio id="laguUltah" loop>
+  <source src="nadin-semua-aku-dirayakan.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    const audio = document.getElementById('laguUltah');
+    audio.volume = 0.6;
+    const playPromise = audio.play();
+    if (playPromise !== undefined) {
+      playPromise.catch(() => {
+        document.body.addEventListener('click', () => {
+          audio.play();
+        }, { once: true });
+      });
+    }
+  });
+</script>
   </body>
 </html>
