@@ -109,4 +109,17 @@ hr {
     border: 0;
     border-top: 1px solid #eee;
     margin: 20px 0;
+    .watermark {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12px;
+    color: #f7a1b0; /* Warna pink senada */
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 1px;
+    opacity: 0.7; /* Biar agak transparan, khas watermark */
+    font-weight: 600;
+    pointer-events: none; /* Biar nggak ganggu kalau terklik */
+}
 }
