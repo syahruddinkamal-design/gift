@@ -7,7 +7,7 @@ function kirimDanPindah() {
     if (isiWish.trim() !== "") {
         
         // Menampilkan pesan doa (Pop-up)
-        alert("Amin ya Allah... Harapanmu sudah disimpan di hati. ✨");
+        alert("Aamin ya Allah ya Rabbal Aalamiin... Harapanmu tercatat dilangit ke-7. ✨");
 
         // 3. Pindah ke halaman bunga.html
         window.location.href = "bunga.html";
