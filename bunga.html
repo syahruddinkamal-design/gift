@@ -306,23 +306,33 @@
         </div>
       </div>
     </div>
+    <button id="tombolMusik" style="position: fixed; left: 0; top: 50%; transform: translateY(-50%); z-index: 9999; padding: 10px; background: rgba(255, 255, 255, 0.6); border: 1px solid #ffb6c1; border-radius: 0 10px 10px 0; cursor: pointer; font-family: sans-serif;">
+        Play 🎵
+    </button>
+
     <audio id="laguUltah" loop>
-    <source src="nadin-semua-aku-dirayakan.mp3" type="audio/mpeg">
-</audio>
+        <source src="nadin-semua-aku-dirayakan.mp3" type="audio/mpeg">
+    </audio>
+
     <script src="main.js"></script>
-<script>
-    const audio = document.getElementById('laguUltah');
-    audio.volume = 0.6;
 
-    function aktifkanMusik() {
-        audio.play().catch(() => {
-            console.log("Menunggu interaksi...");
+    <script>
+        const audio = document.getElementById('laguUltah');
+        const tombol = document.getElementById('tombolMusik');
+        audio.volume = 0.6;
+
+        tombol.addEventListener('click', () => {
+            if (audio.paused) {
+                audio.play();
+                tombol.innerText = "Pause ⏸️";
+                tombol.style.background = "rgba(255, 182, 193, 0.9)";
+            } else {
+                audio.pause();
+                tombol.innerText = "Play 🎵";
+                tombol.style.background = "rgba(255, 255, 255, 0.6)";
+            }
         });
-    }
+    </script>
 
-    document.addEventListener('click', aktifkanMusik, { once: true });
-    document.addEventListener('touchstart', aktifkanMusik, { once: true });
-</script>
-</script>
-  </body>
+</body>
 </html>
